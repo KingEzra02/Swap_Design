@@ -32,18 +32,18 @@ body, html {
     background-image: url('./media/images/images.jpeg');
 }
 
-.overlay {
+/* .overlay {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
     height: 100%;
     overflow-y: auto;
-}
+} */
 .main-header {
   width: 100%;
   text-align: center;
   padding: 30px 10px 10px;
   background-color: #F0E4D3;
-  color: #fff;
+  color: #000000;
   position: relative;
   z-index: 10;
 }
@@ -64,9 +64,9 @@ body, html {
     font-size: 2.5rem;
     color: #0a0909;
     letter-spacing: 2px;
-}
+}   
 
-/* Grid for images */
+/* Grid for images
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -86,7 +86,7 @@ body, html {
 }
 .image-grid img:hover {
     transform: scale(1.05);
-}
+} */
 
 .circle-infographic {
   position: relative;
@@ -105,8 +105,8 @@ body, html {
 }
 
 .circle-item img {
-  width: 70px;
-  height: 70px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
@@ -118,10 +118,10 @@ body, html {
 }
 
 .circle-item span {
-  display: block;
+  display: grid;
   margin-top: 5px;
-  color: #fff;
-  font-size: 12px;
+  color: #030303;
+  font-size: 12px bold;
   text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 
