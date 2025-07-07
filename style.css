@@ -29,8 +29,7 @@ body, html {
 
 .right {
     right: 0;
-    /* background-image: url('./media/images/modern-desk.jpg'); */
-    background-color: #D3ECCD;
+    background-image: url('./media/images/images.jpeg');
 }
 
 .overlay {
@@ -39,12 +38,31 @@ body, html {
     height: 100%;
     overflow-y: auto;
 }
+.main-header {
+  width: 100%;
+  text-align: center;
+  padding: 30px 10px 10px;
+  background-color: #F0E4D3;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
 
-h1 {
+.main-header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.main-header span {
+  color: #00ffcc;
+}
+
+ .After-h1, .before-h1{
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color: #fff;
+    color: #0a0909;
     letter-spacing: 2px;
 }
 
@@ -70,6 +88,43 @@ h1 {
     transform: scale(1.05);
 }
 
+.circle-infographic {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  border-radius: 50%;
+}
+
+.circle-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(calc(90deg * var(--i))) translate(130px) rotate(calc(-90deg * var(--i)));
+  text-align: center;
+}
+
+.circle-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.circle-item img:hover {
+  transform: scale(1.1);
+}
+
+.circle-item span {
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .split {
@@ -89,4 +144,4 @@ h1 {
     .overlay {
         height: auto;
     }
-}
+} 
